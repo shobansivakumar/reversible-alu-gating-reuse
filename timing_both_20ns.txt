@@ -1,0 +1,76 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Mon Mar 30 00:30:08 2026
+| Host         : NITRO-5 running 64-bit major release  (build 9200)
+| Command      : report_timing -file timing_both_20ns.txt
+| Design       : ALU
+| Device       : 7a200tl-sbg484
+| Speed File   : -2L  PRODUCTION 1.14 2018-01-25
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.546ns  (required time - arrival time)
+  Source:                 sel[1]
+                            (input port clocked by virtual_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            Yout[16]
+                            (output port clocked by virtual_clk  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             virtual_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            20.000ns  (virtual_clk rise@20.000ns - virtual_clk rise@0.000ns)
+  Data Path Delay:        19.429ns  (logic 5.342ns (27.494%)  route 14.087ns (72.506%))
+  Logic Levels:           10  (IBUF=1 LUT3=1 LUT6=7 OBUF=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock virtual_clk rise edge)
+                                                      0.000     0.000 r  
+                         ideal clock network latency
+                                                      0.000     0.000    
+                         input delay                  0.000     0.000    
+    Y9                                                0.000     0.000 f  sel[1] (IN)
+                         net (fo=0)                   0.000     0.000    sel[1]
+    Y9                   IBUF (Prop_ibuf_I_O)         1.034     1.034 f  sel_IBUF[1]_inst/O
+                         net (fo=56, routed)          6.004     7.038    sel_IBUF[1]
+    SLICE_X1Y119         LUT3 (Prop_lut3_I0_O)        0.157     7.195 r  Yout_OBUF[12]_inst_i_21/O
+                         net (fo=2, routed)           0.619     7.814    B_arith[2]
+    SLICE_X2Y119         LUT6 (Prop_lut6_I1_O)        0.378     8.192 r  Yout_OBUF[12]_inst_i_17/O
+                         net (fo=1, routed)           0.886     9.078    Yout_OBUF[12]_inst_i_17_n_0
+    SLICE_X2Y120         LUT6 (Prop_lut6_I5_O)        0.148     9.226 r  Yout_OBUF[12]_inst_i_11/O
+                         net (fo=2, routed)           1.036    10.262    u_add/rca/rca1/rca2/C3
+    SLICE_X0Y122         LUT6 (Prop_lut6_I5_O)        0.148    10.410 r  Yout_OBUF[12]_inst_i_9/O
+                         net (fo=1, routed)           0.622    11.031    u_add/rca/rca2/rca1/C1
+    SLICE_X0Y124         LUT6 (Prop_lut6_I5_O)        0.148    11.179 r  Yout_OBUF[12]_inst_i_5/O
+                         net (fo=3, routed)           0.540    11.720    u_add/rca/rca2/rca1/C3
+    SLICE_X1Y125         LUT6 (Prop_lut6_I5_O)        0.148    11.868 r  Yout_OBUF[16]_inst_i_8/O
+                         net (fo=3, routed)           1.126    12.993    u_add/rca/rca2/rca2/C1
+    SLICE_X2Y125         LUT6 (Prop_lut6_I5_O)        0.148    13.141 r  Yout_OBUF[16]_inst_i_3/O
+                         net (fo=1, routed)           0.753    13.895    u_add/rca/rca2/rca2/C3
+    SLICE_X3Y125         LUT6 (Prop_lut6_I1_O)        0.148    14.043 r  Yout_OBUF[16]_inst_i_1/O
+                         net (fo=1, routed)           2.502    16.545    Yout_OBUF[16]
+    P20                  OBUF (Prop_obuf_I_O)         2.884    19.429 r  Yout_OBUF[16]_inst/O
+                         net (fo=0)                   0.000    19.429    Yout[16]
+    P20                                                               r  Yout[16] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock virtual_clk rise edge)
+                                                     20.000    20.000 r  
+                         ideal clock network latency
+                                                      0.000    20.000    
+                         clock pessimism              0.000    20.000    
+                         clock uncertainty           -0.025    19.975    
+                         output delay                -0.000    19.975    
+  -------------------------------------------------------------------
+                         required time                         19.975    
+                         arrival time                         -19.429    
+  -------------------------------------------------------------------
+                         slack                                  0.546    
+
+
+
+
