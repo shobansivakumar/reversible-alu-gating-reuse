@@ -1,6 +1,6 @@
 @ ACTIVITY-AWARE REVERSIBLE ALU WITH GARBAGE-LINE REUSE: 16-BIT FPGA IMPLEMENTATION WITH 8-BIT OPERAND EVALUATION
 
-@@ Overview
+>> Overview
 This project implements a reversible Arithmetic Logic Unit (ALU) optimized using:
 - Activity-aware gating
 - Garbage-line reuse
