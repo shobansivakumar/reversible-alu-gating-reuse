@@ -44,33 +44,33 @@ module ALU_both_tb;
         sel = 3'b000;
         #10;
 
-//        // 16-BIT TESTS
-//        // ------------------------------------------------------
+       // 16-BIT TESTS
+       // ------------------------------------------------------
 
-//        // Addition
-//        A = 16'h1234; B = 16'h5678; sel = 3'b000; #10; // 068AC
-//        A = 16'hFFFF; B = 16'h0001; sel = 3'b000; #10; // carry=10000
-//        A = 16'hA3F1; B = 16'h4C2D; sel = 3'b000; #10; // F01E
+       // Addition
+       A = 16'h1234; B = 16'h5678; sel = 3'b000; #10; // 068AC
+       A = 16'hFFFF; B = 16'h0001; sel = 3'b000; #10; // carry=10000
+       A = 16'hA3F1; B = 16'h4C2D; sel = 3'b000; #10; // F01E
 
-//        // SUubtraction
-//        A = 16'h5678; B = 16'h1234; sel = 3'b001; #10; // 4444
-//        A = 16'h0001; B = 16'h0002; sel = 3'b001; #10; // borrow
-//        A = 16'hF0F0; B = 16'h0F0F; sel = 3'b001; #10; // E1E1
+       // SUubtraction
+       A = 16'h5678; B = 16'h1234; sel = 3'b001; #10; // 4444
+       A = 16'h0001; B = 16'h0002; sel = 3'b001; #10; // borrow
+       A = 16'hF0F0; B = 16'h0F0F; sel = 3'b001; #10; // E1E1
 
-//        // AND operation
-//        A = 16'hF0F0; B = 16'hFF00; sel = 3'b010; #10; // F000
-//        A = 16'hABCD; B = 16'hDCBA; sel = 3'b010; #10; // 8888
-//        A = 16'h1234; B = 16'hFEDC; sel = 3'b010; #10; // 1214
+       // AND operation
+       A = 16'hF0F0; B = 16'hFF00; sel = 3'b010; #10; // F000
+       A = 16'hABCD; B = 16'hDCBA; sel = 3'b010; #10; // 8888
+       A = 16'h1234; B = 16'hFEDC; sel = 3'b010; #10; // 1214
 
-//        // OR operation
-//        A = 16'hF0F0; B = 16'hFF00; sel = 3'b011; #10; // FFF0
-//        A = 16'hABCD; B = 16'hDCBA; sel = 3'b011; #10; // FFFF
-//        A = 16'h1234; B = 16'hFEDC; sel = 3'b011; #10; // FEFC
+       // OR operation
+       A = 16'hF0F0; B = 16'hFF00; sel = 3'b011; #10; // FFF0
+       A = 16'hABCD; B = 16'hDCBA; sel = 3'b011; #10; // FFFF
+       A = 16'h1234; B = 16'hFEDC; sel = 3'b011; #10; // FEFC
 
-//        // XOR operation
-//        A = 16'hF0F0; B = 16'hFF00; sel = 3'b100; #10; // 0FF0
-//        A = 16'hABCD; B = 16'hDCBA; sel = 3'b100; #10; // 7777
-//        A = 16'h1234; B = 16'hFEDC; sel = 3'b100; #10; // ECE8
+       // XOR operation
+       A = 16'hF0F0; B = 16'hFF00; sel = 3'b100; #10; // 0FF0
+       A = 16'hABCD; B = 16'hDCBA; sel = 3'b100; #10; // 7777
+       A = 16'h1234; B = 16'hFEDC; sel = 3'b100; #10; // ECE8
 
         // 8-BIT TESTS
         // ---------------------------------------------------------
