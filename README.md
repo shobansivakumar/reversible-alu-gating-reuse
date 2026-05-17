@@ -42,10 +42,10 @@ This repository contains the final optimized version:
 
 | Metric       | Value     |
 ============================
-| LUTs         | 79        |
-| Delay        | 19.429 ns |
-| Logic Levels | 10        |  
-| Timing Slack | 0.546 ns  |
+| LUTs         = 79        |
+| Delay        = 19.429 ns |
+| Logic Levels = 10        |  
+| Timing Slack = 0.546 ns  |
 
 ---------------
 
@@ -53,16 +53,16 @@ This repository contains the final optimized version:
 
 | File                                 | Description                      |
 ===========================================================================
-| `both_revalu.v`                      | Main reversible ALU design       |
-| `both_revalu_tb.v`                   | Testbench for simulation         |
-| `switching_both_8.txt`               | 8-bit switching activity report  |
-| `switching_both_16.txt`              | 16-bit switching activity report |
-| `timing_both_20ns.txt`               | Timing analysis report           |
-| `util_both.txt`                      | FPGA utilization report          |
-| `REV_ALU_both 8 Bit Simulation.png`  | 8-bit waveform output            |
-| `REV_ALU_both 16 Bit Simulation.png` | 16-bit waveform output           |
-| `REV_ALU_both 8 bit Power.png`       | 8-bit power analysis             |
-| `REV_ALU_both 16 bit Power.png`      | 16-bit power analysis            |
+| `both_revalu.v`                      = Main reversible ALU design       |
+| `both_revalu_tb.v`                   = Testbench for simulation         |
+| `switching_both_8.txt`               = 8-bit switching activity report  |
+| `switching_both_16.txt`              = 16-bit switching activity report |
+| `timing_both_20ns.txt`               = Timing analysis report           |
+| `util_both.txt`                      = FPGA utilization report          |
+| `REV_ALU_both 8 Bit Simulation.png`  = 8-bit waveform output            |
+| `REV_ALU_both 16 Bit Simulation.png` = 16-bit waveform output           |
+| `REV_ALU_both 8 bit Power.png`       = 8-bit power analysis             |
+| `REV_ALU_both 16 bit Power.png`      = 16-bit power analysis            |
 
 ---------------
 
